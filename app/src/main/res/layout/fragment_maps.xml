@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/showMarkersBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mapView"
+        android:layout_alignLeft="@id/mapView"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:alpha=".80"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter" />
+    <ImageView
+        android:id="@+id/addMarkerBtn"
+        android:src="@drawable/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mapView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:alpha=".90"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>
+
+    <!--android:maxHeight="50dp"-->
+    <!--android:maxWidth="50dp"-->

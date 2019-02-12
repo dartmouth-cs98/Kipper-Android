@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.artfara.apps.kipper.MapsActivity">
+
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:padding="6dp"
+            android:src="@drawable/refresh_button_selector"
+            />
+        <RadioGroup
+            android:id="@+id/hotNewRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/showhot"
+                android:layout_width="wrap_content"
+                android:background="@drawable/hot_new_buttons_background_selector"
+                android:layout_height="wrap_content"
+                android:text="HOT"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="9dp"/>
+
+            <RadioButton
+                android:id="@+id/shownew"
+                android:text="NEW"
+                android:background="@drawable/hot_new_buttons_background_selector"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="9dp"
+                />
+            <RadioButton
+                android:id="@+id/showyours"
+                android:text="MINE"
+                android:background="@drawable/hot_new_buttons_background_selector"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="9dp"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wrapper_post"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="?android:colorBackground">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="6dp">
+            <ImageView
+                android:id="@+id/postButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/post_icon" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ListViewPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrapper"
+        android:layout_above="@+id/wrapper_post"
+        android:fadingEdge="vertical" />
+
+</RelativeLayout>

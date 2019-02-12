@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "393979692722",
+    "firebase_url": "https://kipper-test.firebaseio.com",
+    "project_id": "kipper-test",
+    "storage_bucket": "kipper-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393979692722:android:3a1e9e93b85e800d",
+        "android_client_info": {
+          "package_name": "com.artfara.apps.kipper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393979692722-e8nf30m8bk764tgu9320bkksadn2p4au.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAflJ7D6yRigQZH1tY6JxuGpnN6VrN8GQ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

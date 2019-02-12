@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="73dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/user"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintHorizontal_bias="0.503"
+        tools:layout_editor_absoluteY="45dp"
+        tools:layout_editor_absoluteX="151dp" />
+
+    <TextView
+        android:id="@+id/txtRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageUser"
+        app:layout_constraintRight_toLeftOf="@+id/imageUser"
+        app:layout_constraintTop_toTopOf="@+id/imageUser"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/txtPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageUser"
+        app:layout_constraintLeft_toRightOf="@+id/imageUser"
+        app:layout_constraintTop_toTopOf="@+id/imageUser" />
+
+    <TextView
+        android:id="@+id/txtRelativeRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageUser"
+        app:layout_constraintRight_toRightOf="@+id/imageUser"
+        app:layout_constraintTop_toBottomOf="@+id/imageUser" />
+
+    <TextView
+        android:id="@+id/txtCollegeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/darkGray"
+        app:layout_constraintBottom_toTopOf="@+id/imageUser"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintVertical_bias="0.555"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.501" />
+</android.support.constraint.ConstraintLayout>
